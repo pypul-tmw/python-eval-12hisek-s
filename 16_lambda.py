@@ -12,6 +12,6 @@ print(evens)
 
 #using reduction function
 #reduce(): This function repeatedly applies a lambda expression to elements of a list to combine them into a single result.
-product = list(reduce(lambda x,y: x * y,numbers))
+product = reduce(lambda x,y: x * y,numbers)
 print("Using reduce function")
 print(product)

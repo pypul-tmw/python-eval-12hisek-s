@@ -1,0 +1,8 @@
+Thread Pool
+4 workers sharing the same office and documents.
+Fast communication.
+
+
+Process Pool
+4 workers in separate offices.
+Each has their own copy of documents.

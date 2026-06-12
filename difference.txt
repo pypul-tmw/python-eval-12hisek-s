@@ -1,0 +1,14 @@
+1. Use Threading when:
+Downloading files
+API calls
+File I/O
+--------------------------------
+2. Use Multiprocessing when:
+Heavy CPU work
+ML training
+Data processing
+--------------------------------
+3. Use Asyncio when:
+Thousands of network requests
+Web servers (FastAPI)
+Real-time apps

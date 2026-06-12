@@ -1,0 +1,38 @@
+1. Threading (basic idea)
+
+--Run multiple tasks at the same time
+
+Task 1 + Task 2 + Task 3 run together
+
+✔ No control over timing
+✔ Just parallel execution
+
+2. Lock
+
+--Only 1 thread at a time can access a resource
+
+Thread A → enters → finishes → Thread B enters
+
+✔ Used to protect shared data
+✔ Prevents race conditions
+
+3. Semaphore
+
+--Allows N threads at a time
+
+Example: Semaphore(2)
+
+Only 2 threads run together
+others wait
+
+✔ Used to limit resource usage
+✔ Example: API calls, DB connections
+
+4. Barrier
+
+--ALL threads must reach a point before continuing
+
+All threads stop → wait → then continue together
+
+✔ Used for synchronization steps
+✔ Example: game start, simulations

@@ -1,0 +1,29 @@
+#Install Scrapy
+pip install scrapy
+
+#Create a Scrapy Project
+scrapy startproject scrap_project
+
+#Create a Spider
+cd scrap_project
+scrapy genspider myspider example.com
+
+#Define the Spider Rules
+class MyspiderSpider(scrapy.Spider):
+    name = "myspider"
+
+    start_urls = ["https://quotes.toscrape.com"]
+
+    def parse(self, response):
+        for quote in response.css(".quote"):
+            yield {
+                "text": quote.css(".text::text").get(),
+                "author": quote.css(".author::text").get(),
+            }
+
+
+#Run the Spider
+scrapy crawl myspider
+
+#Scrapy saves data to:JSON
+scrapy crawl myspider -o data.json

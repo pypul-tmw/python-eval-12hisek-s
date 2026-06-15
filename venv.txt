@@ -1,0 +1,16 @@
+A virtual environment is a self-contained Python environment 
+that allows you to install packages and dependencies 
+without affecting the global Python installation on your machine.
+
+
+Creating a Virtual Environment:
+->    python -m venv myenv
+
+Activating the Virtual Environment:
+->    source myenv/bin/activate
+
+Installing Packages in the Virtual Environment:
+->    pip install package_name
+
+Deactivating the Virtual Environment:
+->    deactivate

@@ -1,0 +1,22 @@
+<employees>
+    <employee>
+        <id> 1 </id>
+        <name> Abhishek </name>
+        <salary> 50000 </salary>
+    </employee>
+
+
+
+    <employee>
+        <id> 2 </id>
+        <name> Ash </name>
+        <salary> 40000 </salary>
+    </employee>
+
+    <employee>
+        <id> 3 </id>
+        <name> Alice </name>
+        <salary> 50000 </salary>
+    </employee>
+</employees>
+
